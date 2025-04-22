@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Register</h2>
+    <form id="userForm" novalidate>
+      <div class="input-group">
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+        <small class="error"></small>
+      </div>
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="example@gmail.com" />
+        <small class="error"></small>
+      </div>
+      <div class="input-group">
+        <label>Phone Number</label>
+        <input type="tel" id="phone" placeholder="1234567890" />
+        <small class="error"></small>
+      </div>
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter password" />
+        <small class="error"></small>
+      </div>
+      <button type="submit">Submit</button>
+      <p class="success-msg"></p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
